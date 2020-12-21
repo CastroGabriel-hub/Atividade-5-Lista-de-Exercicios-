@@ -1,0 +1,16 @@
+programa {
+	funcao inicio() {
+		inteiro ano = 0
+		
+		escreva("Dgite um ano qualquer: ")
+		leia(ano)
+		
+		se(ano % 400 == 0 ou (ano % 4 == 0 e ano % 100 != 0)){
+		    escreva("O ano é bisexto.")
+		}
+		senao{
+		    escreva("O ano NÃO é bisexto.")
+		}
+	
+	}
+}
