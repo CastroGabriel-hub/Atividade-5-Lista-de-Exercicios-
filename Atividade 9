@@ -1,0 +1,25 @@
+programa {
+	funcao inicio() {
+		
+		real nota_um, nota_dois, media
+		
+		escreva("Qual foi sua primeira nota parcial? ")
+		leia(nota_um)
+		
+		escreva("Qual foi a sua segunda nota? ")
+		leia(nota_dois)
+		
+		media = (nota_um + nota_dois) / 2
+		
+		se(media >= 7.00 e media < 10.00 ){
+		    escreva("Sua média está acima de sete, parabéns, você foi aprovado(a)!")
+		}
+		senao se(media == 10.00){
+		    escreva("Ual, você passou com a média maxima, parabéns!!!")
+		}
+		senao{
+		    escreva("sua média ficou abaixo de sete, infelizmente não é o suficiente para ser aprovado(a).")
+		}
+
+	}
+}
