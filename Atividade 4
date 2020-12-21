@@ -1,31 +1,38 @@
 programa {
 	funcao inicio() {
-		
-	    real A = 0.0, B = 0.0, C = 0.0
-	    
+
+	    real a = 0.0, b = 0.0, c = 0.0
+
 	    //Quando for informar as medidas digite apenas o número desejado//
-	    
+
 	    escreva("Informe a medida do primeiro lado do triângulo: ")
-	    leia(A)
-	    
+	    leia(a)
+
 	    escreva("O segundo lado: ")
-	    leia(B)
-	    
+	    leia(b)
+
 	    escreva("O terceiro lado: ")
-	    leia(C)
-	    
-	    se(A == B e B == C){
-	        escreva("\nSeu triângulo é Equilátero.\n")
-	    }
-	    senao{ 
-	    
-	        se(A == B ou A == C ou B == C){
-	            escreva("\nSeu triângulo é Isóceles.\n")
+	    leia(c)
+
+        se(a + b > c e a + c > b e b + c > a){
+
+	        se(a == b e b == c){
+	            escreva("\nSeu triângulo é Equilátero.\n")
 	        }
-	        senao{
-	            escreva("\nSeu triângulo é Escaleno.\n")
+	        senao{ 
+
+	            se(b == a ou a == c ou b == c){
+	                escreva("\nSeu triângulo é Isóceles.\n")
+	            }
+	            senao{
+	                escreva("\nSeu triângulo é Escaleno.\n")
+	            }
 	        }
-	    }
-	    
+        }
+        
+        senao{
+            escreva("\nOps! Essas medidas não compõem um triângulo.")
+        }
+        
 	}
 }
