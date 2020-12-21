@@ -1,0 +1,20 @@
+programa {
+	funcao inicio() {
+		
+		real temperatura = 0.0
+		
+		escreva("Inforte uma temperatura qualquer: ")
+		leia(temperatura)
+		
+		se(temperatura > 0.0){
+		    escreva("A temperatura está acima de zero.")
+		}
+		senao se(temperatura < 0.0){
+		    escreva("A temperatura está abaixo de zero. \nNão saia de casa sem uma jaqueta (ou duas)!!!")
+		}
+		senao{
+		    escreva("A temperatura é zero. \nCuidado com o frio!")
+		}
+
+	}
+}
