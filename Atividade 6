@@ -1,0 +1,39 @@
+programa {
+	funcao inicio() {
+		
+		real a, b, c 
+		
+		escreva("Escreva um número qualquer: ")
+        leia(a)		
+		
+		escreva("Outro número: ")
+		leia(b)
+		
+		escreva("Um ultimo número: ")
+		leia(c)
+		
+		limpa()
+		
+		se(a > b e a > c e b > c){
+		    escreva("\nA ordem decrescente desses números é:\n", a, "\n", b, "\n", c)
+		}
+		se(a > b e a > c e b < c){
+		    escreva("\nA ordem decrescente desses números é:\n", a, "\n", c, "\n", b)
+		}
+		
+		se(b > a e b > c e a > c){
+		    escreva("\nA ordem decrescente desses números é:\n", b, "\n", a, "\n", c)
+		}
+		se(b > a e b > c e a < c){
+		    escreva("\nA ordem decrescente desses números é:\n", b, "\n", c, "\n", a)
+		}
+		
+		se(c > a e c > b e a > b){
+		    escreva("\nA ordem decrescente desses números é:\n", c, "\n", a, "\n", b)
+		}
+		se(c > a e c > b e a < b){
+		    escreva("\nA ordem decrescente desses números é:\n", c, "\n", b, "\n", a)
+		}
+		
+	}
+}
