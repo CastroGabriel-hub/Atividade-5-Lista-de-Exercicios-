@@ -1,0 +1,44 @@
+programa {
+	
+	cadeia coriza
+	cadeia tosse
+	cadeia febre
+	cadeia garganta
+	
+	cadeia respirar
+	
+	funcao inicio() {
+		
+		//Responda apenas com "sim" ou "não"!!!
+		
+		escreva("Você está com coriza? ")
+		leia(coriza)
+		
+		escreva("Você está com tosse? ")
+		leia(tosse)
+		
+		escreva("Você está com febre? ")
+		leia(febre)
+		
+		escreva("Você está sentindo dor de garganta? ")
+		leia(garganta)
+		
+		escreva("Você sente dificuldade de respirar? ")
+		leia(respirar)
+		
+		se(coriza == "sim" ou tosse == "sim" ou febre == "sim" ou garganta == "sim" ou respirar == "sim"){
+		    
+		    escreva("Você apresenta sintômas de Covid-19.")
+		    
+		    se(respirar == "sim"){
+		        escreva("\nSeus sintomas são graves")
+		    }
+		    senao{
+		        escreva("\nSeus sintomas são leves.")
+		        escreva("\nMesmo assim. Não deixe de tomar os cuidados necessários!")
+		    }
+		    
+		}
+	
+	}
+}
