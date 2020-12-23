@@ -1,0 +1,47 @@
+programa {
+	funcao inicio() {
+		
+		inteiro opcao, quantidade
+		
+	  escreva("100) Cachorro quente - R$5.00\n")
+    escreva("101) Bauru - R$2.60\n")
+    escreva("102) Bauru c/ovo - R$3.80\n")
+    escreva("103) Hamburger - R$9.00\n")
+    escreva("104) Cheeseburger - R$11.00\n")
+    escreva("105) Refrigerante - R$3.00\n")
+    escreva("106) Semente dos Deuses - R$1000.00\n")
+	
+	  escreva("\nQual lanche você vai querer? (escreva  código do lanche) ")
+	  leia(opcao)
+	    
+	  escreva("Quantas unidades você vai querer? ")
+	  leia(quantidade)
+	    
+	  limpa()
+	    
+	    escolha (opcao){
+	        
+	        caso 100:
+	            escreva("Ok, seu pedido ficou R$", 5.00 * quantidade)
+	            pare
+	        caso 101:
+	            escreva("Ok, seu pedido ficou R$", 2.60 * quantidade)
+	            pare
+	        caso 102:
+	            escreva("Ok, seu pedido ficou R$", 3.80 * quantidade)
+	            pare
+	        caso 103:
+	            escreva("Ok, seu pedido ficou R$", 9.00 * quantidade)
+	            pare
+	        caso 104:
+	            escreva("Ok, seu pedido ficou R$", 11.0 * quantidade)
+	            pare
+	        caso 105:
+	            escreva("Ok, seu pedido ficou R$", 3.00 * quantidade)
+	            pare
+	        caso 106:
+	            escreva("Ok, seu pedido ficou R$", 1000.00 * quantidade)
+	            pare
+	    }
+	}
+}
